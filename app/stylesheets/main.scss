@@ -1,0 +1,37 @@
+@import '../assets/century-gothic.ttf';
+.main{
+  font-family: 'century-gothic';
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.full-view{
+  display: none;
+}
+
+.recipe{
+  width: 50%;
+  margin: auto;
+
+  h1{
+    cursor: pointer;
+    color: rgb(232, 186, 97);
+  }
+
+  img{
+    margin-left: 2rem;
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+  }
+  table{
+    width: 50%;
+    float: right;
+    display: inline-block;
+  }
+
+  td{
+    width: 30rem;
+  }
+}
