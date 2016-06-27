@@ -6,22 +6,10 @@ var Recipe = React.createClass({
     recipe: PropTypes.object.isRequired
   },
 
-  getInitialState: function(){
-    return{
-      showRecipe: false
-    };
-  },
-
-  handleClick: function(e){
-    this.setState({
-      showRecipe: (this.state.showRecipe ? false : true)
-    });
-  },
-
   render: function(){
     var recipe = this.props.recipe;
     return(
-      <div className = "recipe">
+      <div className = "recipe" onClick={this.props.showRecipe} id={this.props.id}>
         <h1>{recipe.title}</h1>
         <img src={recipe.image} alt=""/>
       </div>
