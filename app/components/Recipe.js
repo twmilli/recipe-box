@@ -1,36 +1,33 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 
-var Recipe = function(props){
-  var ingredients = props.ingredient_list.map(function(ingredient, key){
-    return (
-      <tr key={key}>
-        <td>{ingredient.amount}</td>
-        <td>{ingredient.name}</td>
-      </tr>
-    )
-  });
+var Recipe = React.createClass({
+  propTypes:{
+    recipe: PropTypes.object.isRequired
+  },
 
-  return(
-    <div className = "recipe">
-      <h1 onClick{props.handleClick}>{props.title}</h1>
-      <div className="full-view">
-      <h3>{props.description}</h3>
-      <img src={props.image} alt=""/>
-      <table>
-        <tbody>
-          {ingredients}
-        </tbody>
-      </table>
+  getInitialState: function(){
+    return{
+      showRecipe: false
+    };
+  },
+
+  handleClick: function(e){
+    this.setState({
+      showRecipe: (this.state.showRecipe ? false : true)
+    });
+  },
+
+  render: function(){
+    var recipe = this.props.recipe;
+    return(
+      <div className = "recipe">
+        <h1>{recipe.title}</h1>
+        <img src={recipe.image} alt=""/>
       </div>
-    </div>
-  )
-}
 
-Recipe.PropTypes = {
-  ingredient_list: PropTypes.array.isRequired,
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string,
-  description: PropTypes.string
-}
+    )
+  }
+});
+
 module.exports = Recipe;

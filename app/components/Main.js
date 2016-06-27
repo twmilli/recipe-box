@@ -1,6 +1,27 @@
 var React = require('react');
 var Recipe = require('./Recipe');
+var RecipeModal = require('./RecipeModal');
 var Main = React.createClass({
+
+  getInitialState: function(){
+    var start_recipe = this.createRecipe('http://www.wikihow.com/images/7/78/Cook-a-Western-Omelet-Intro.jpg',
+    ['3 eggs, 2 slices bacon, 2 tomatoes'], 'Omelette');
+    return {
+      recipe_list:[start_recipe]
+    }
+  },
+
+  addRecipe: function(image, ingredient_list, title){
+    var new_recipe = createRecipe(image, ingredient_list, title);
+    this.state.recipe_list.push(new_recipe);
+    this.setState({
+      recipe_list: this.state.recipe_list
+    });
+  },
+
+  handleAddRecipe: function(){
+
+  },
 
   createRecipe: function(image, ingredient_list, title){
     var new_recipe = {
@@ -12,25 +33,14 @@ var Main = React.createClass({
   },
 
   render: function(){
-    var test_list = [{
-      name: "egg",
-      amount: 3,
-      units: "whole"
-    },
-  {
-    name: "tomatoes",
-    amount: 1/2
-  }]
-    return(
-      <div className="jumbotron main">
-        <Recipe image="http://www.wikihow.com/images/7/78/Cook-a-Western-Omelet-Intro.jpg"
-          ingredient_list={test_list}
-          title="Omelette"
-          description="Classic take on a Western Omelette"/>
-        <Recipe image="http://www.wikihow.com/images/7/78/Cook-a-Western-Omelet-Intro.jpg"
-            ingredient_list={test_list}
-            title="Omelette"
-            description="Classic take on a Western Omelette"/>
+    var recipes = this.state.recipe_list.map(function(recipe, key){
+      return(<Recipe key={key} recipe={recipe} />);
+    });
+
+    return (
+      <div>
+        <RecipeModal />
+        {recipes}
       </div>
     )
   }
