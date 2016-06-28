@@ -15,8 +15,8 @@ var Main = React.createClass({
     }
   },
 
-  addRecipe: function(image, ingredient_list, title){
-    var new_recipe = this.createRecipe(image, ingredient_list, title);
+  addRecipe: function(image, ingredient_list, num_list, title){
+    var new_recipe = this.createRecipe(image, ingredient_list,num_list, title);
     var new_list = this.state.recipe_list;
     new_list.push(new_recipe);
     this.setState({
@@ -24,37 +24,59 @@ var Main = React.createClass({
     });
   },
 
-  createRecipe: function(image, ingredient_list, title){
+  modifyRecipe: function(image, ingredient_list, num_list, title, id){
+    var new_recipe = this.createRecipe(image, ingredient_list, num_list, title);
+    var new_list = this.state.recipe_list;
+    new_list[id] = new_recipe;
+    this.setState({
+      recipe_list: new_list
+    });
+  },
+
+  createRecipe: function(image, ingredient_list,num_list, title){
     var new_recipe = {
       image: image,
       ingredient_list: ingredient_list,
+      num_list: num_list,
       title: title
     }
     return new_recipe;
   },
 
+  delete: function(id){
+    var new_list = this.state.recipe_list;
+    delete new_list[id];
+    this.setState({
+      recipe_list: new_list
+    });
+  },
+
+
   showRecipe: function(e){
-    console.log(e.currentTarget);
     var curr_recipe = this.state.recipe_list[e.currentTarget.id];
-    console.log(curr_recipe);
     this.context.router.push({
       pathname: '/recipeView',
       query:{
         image: curr_recipe.image,
         title: curr_recipe.title,
-        ingredient_list: curr_recipe.ingredient_list
+        ingredient_list: curr_recipe.ingredient_list,
+        num_list: curr_recipe.num_list
       }
     });
   },
 
   render: function(){
     var recipes = this.state.recipe_list.map(function(recipe, key){
-      return(<Recipe key={key} recipe={recipe} id={key} showRecipe={this.showRecipe}/>);
+      return(
+        <Recipe key={key} recipe={recipe} id={key} showRecipe={this.showRecipe}
+          delete={this.delete}
+          modifyRecipe={this.modifyRecipe}/>
+    );
     }.bind(this));
 
     return (
       <div>
-        <ModalContainer addRecipe={this.addRecipe}/>
+        <ModalContainer addRecipe={this.addRecipe} delete={this.delete}/>
         {recipes}
       </div>
     )

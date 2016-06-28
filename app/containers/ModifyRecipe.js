@@ -1,23 +1,35 @@
 var React = require('react');
 var RecipeModal = require('../components/RecipeModal');
+var FontAwesome = require('react-fontawesome');
 
 var ModalContainer = React.createClass({
   getInitialState: function(){
+    return{
+      showModal: false,
+      title: this.props.title,
+      image: this.props.image,
+      ingredient_list:this.props.ingredient_list
+    }
+  },
+
+  getDefaultProps: function(){
     return{
       showModal: false,
       title: '',
       image: '',
       ingredient_list:['','','']
     }
-  },
+  }
 
     close: function(){
-      this.resetState();
+      this.setState({
+        showModal: false
+      });
     },
 
     handleAddClick:function(){
       var new_list = this.state.ingredient_list;
-      new_list.push('');
+      new_list.push(0);
       this.setState({
         ingredient_list: new_list
       });
@@ -35,11 +47,6 @@ var ModalContainer = React.createClass({
       })
     },
 
-    delete: function(e){
-      this.props.delete(e);
-      this.resetState();
-    },
-
     handleUpdateImage: function(e){
       this.setState({
         image: e.target.value
@@ -54,21 +61,20 @@ var ModalContainer = React.createClass({
       });
     },
 
-    handleUpdateNum: function(e){
-
-    },
-
     handleSubmit: function(e){
-      this.props.addRecipe(this.state.image, this.state.ingredient_list, this.state.title);
-      this.resetState();
+      this.props.modifyRecipe(this.state.image, this.state.ingredient_list, this.state.title, this.props.id);
+      this.setState({
+        showModal: false
+      });
     },
 
-    resetState: function(){
+    delete: function(e){
+      console.log(this.props);
+      var id = this.props.id;
+      console.log(id);
+      this.props.delete(id);
       this.setState({
-        showModal: false,
-        title: '',
-        image: '',
-        ingredient_list:['','','']
+        showModal: false
       });
     },
 
@@ -76,7 +82,11 @@ var ModalContainer = React.createClass({
   render:function(){
     return(
     <div>
-      <button className="add" onClick={this.open}>+</button>
+      <FontAwesome
+        name="pencil"
+        size='2x'
+        className='edit'
+        onClick={this.open}/>
       <RecipeModal
         close={this.close}
         showModal={this.state.showModal}

@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactRouter = require('react-router');
-var RecipeView = require('../components/RecipeView');
+var RecipeViewContainer = require('../containers/RecipeViewContainer');
 
 
 var Router = ReactRouter.Router;
@@ -16,7 +16,7 @@ var routes = (
   <Router history = {hashHistory}>
     <Route path='/' component = {MainContainer}>
       <IndexRoute component = {Main} />
-      <Route path='recipeView' component={RecipeView} />
+      <Route path='recipeView' component={RecipeViewContainer} />
     </Route>
   </Router>
 );
