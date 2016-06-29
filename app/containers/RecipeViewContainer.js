@@ -39,7 +39,7 @@ var RecipeViewContainer = React.createClass({
   render: function(){
     return(
       <div>
-        <Link to='/'>
+        <Link to='./'>
           <FontAwesome
             name='arrow-left'
             size='3x'

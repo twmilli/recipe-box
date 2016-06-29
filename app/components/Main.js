@@ -58,7 +58,7 @@ var Main = React.createClass({
     var curr_recipe = this.state.recipe_list[e.currentTarget.id];
     this.props.saveRecipeList(this.state.recipe_list);
     this.context.router.push({
-      pathname: '/recipeView',
+      pathname: './recipeView',
       query:{
         image: curr_recipe.image,
         title: curr_recipe.title,
