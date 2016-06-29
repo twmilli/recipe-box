@@ -2,6 +2,7 @@ var React = require('react');
 var Recipe = require('./Recipe');
 var ModalContainer = require('../containers/ModalContainer');
 var Link = require('react-router').Link;
+var FontAwesome = require('react-fontawesome');
 var Main = React.createClass({
   contextTypes:{
     router: React.PropTypes.object.isRequired
@@ -9,7 +10,8 @@ var Main = React.createClass({
 
   getInitialState: function(){
     return {
-      recipe_list:this.props.recipe_list
+      recipe_list:this.props.recipe_list,
+      search: ''
     }
   },
 
@@ -72,8 +74,32 @@ var Main = React.createClass({
     e.currentTarget.src='http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png';
   },
 
+  getDisplayRecipeList: function(){
+    var searchText = this.state.search;
+    if (searchText ==''){
+      return (this.state.recipe_list);
+    }
+    searchText.toLowerCase();
+    var recipe_list = this.state.recipe_list;
+    var display_list=[];
+    for (var i=0; i<recipe_list.length; i++){
+      var title = recipe_list[i].title.toLowerCase();
+      if (title.search(searchText) == 0){
+        display_list.push(recipe_list[i]);
+      }
+    }
+    return display_list;
+  },
+
+  handleSearch: function(e){
+    this.setState({
+      search: e.currentTarget.value
+    });
+  },
+
   render: function(){
-    var recipes = this.state.recipe_list.map(function(recipe, key){
+    var recipe_list = this.getDisplayRecipeList();
+    var recipes = recipe_list.map(function(recipe, key){
       return(
         <Recipe key={key} recipe={recipe} id={key} showRecipe={this.showRecipe}
           delete={this.delete}
@@ -84,6 +110,12 @@ var Main = React.createClass({
 
     return (
       <div>
+        <div className="search-bar">
+          <FontAwesome
+            name="search"
+            size='2x'/>
+          <input type="text" placeholder="search" onChange={this.handleSearch}/>
+        </div>
         <ModalContainer onSubmit={this.addRecipe} delete={this.delete} id={this.state.recipe_list.length}/>
         {recipes}
       </div>

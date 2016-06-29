@@ -5,7 +5,7 @@ var RecipeModal = function(props){
   var ingredient_list = props.ingredients.map(function(ingredient, key){
     return(
       <div key={key}>
-        <input type="number" min='1' placeholder="#" id={key} className='quantity-field'
+        <input type="number" min='0' placeholder="#" id={key} className='quantity-field'
           onChange={props.onNumChange} value={props.num_list[key]} required/>
         <input type="text"  id={key} placeholder="Ingredient"
         onChange={props.onIngredientUpdate}
@@ -26,7 +26,7 @@ var RecipeModal = function(props){
         <form className="form">
           <input type="text" placeholder="Title" onChange={props.onTitleUpdate} value={props.title} required/>
           <input type="text" placeholder="Image URL" onChange={props.onImageUpdate} value={props.image} required/>
-          <input type="number" min='1' placeholder="Servings" onChange={props.onServingsUpdate} value={props.servings} required/>
+          <input type="number" min='0' placeholder="Servings" onChange={props.onServingsUpdate} value={props.servings} required/>
           <h2>Ingredient List:</h2>
           {ingredient_list}
           <button className="submit" onClick={props.onSubmit} type="submit">Save Recipe</button>
