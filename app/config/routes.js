@@ -14,7 +14,7 @@ var RecipeModal = require('../components/RecipeModal');
 
 var routes = (
   <Router history = {browserHistory}>
-    <Route path='/' component = {MainContainer}>
+    <Route path='/recipe-box' component = {MainContainer}>
       <IndexRoute component = {Main} />
       <Route path='recipeView' component={RecipeViewContainer} />
     </Route>

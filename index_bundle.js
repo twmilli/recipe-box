@@ -4607,7 +4607,7 @@
 	  { history: browserHistory },
 	  React.createElement(
 	    Route,
-	    { path: '/', component: MainContainer },
+	    { path: '/recipe-box', component: MainContainer },
 	    React.createElement(IndexRoute, { component: Main }),
 	    React.createElement(Route, { path: 'recipeView', component: RecipeViewContainer })
 	  )
