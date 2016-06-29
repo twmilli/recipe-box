@@ -9,6 +9,7 @@ var RecipeView = function(props){
   var ingredient_list = query.ingredient_list;
   var ingredients = ingredient_list.map(function(ingredient, key){
     return(<div key={key}>
+        <input type="number" value={props.num_list[key]} readOnly={true}/>
         <input type="text" defaultValue={ingredient} readOnly={true}/><br/>
       </div>
     )
@@ -19,10 +20,10 @@ var RecipeView = function(props){
         <Col sm={4} md={5} lg={6} className="left">
           <img src={query.image} alt=""/>
             <div className="servings text-center">
-              <span>1</span><br/>
-              <button>-</button>
+              <span>{props.servings}</span><br/>
+              <button onClick={props.onServingClick} id='-'>-</button>
               Servings
-              <button>+</button>
+              <button onClick={props.onServingClick} id='+'>+</button>
             </div>
         </Col>
         <Col sm={4} md={5} lg={6} className='full-recipe_info'>

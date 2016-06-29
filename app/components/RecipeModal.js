@@ -5,12 +5,13 @@ var RecipeModal = function(props){
   var ingredient_list = props.ingredients.map(function(ingredient, key){
     return(
       <div key={key}>
-        <input type="number" placeholder="#" className='quantity-field'
-          onChange={props.onNumChange}/>
+        <input type="number" min='1' placeholder="#" id={key} className='quantity-field'
+          onChange={props.onNumChange} value={props.num_list[key]} required/>
         <input type="text"  id={key} placeholder="Ingredient"
         onChange={props.onIngredientUpdate}
         value={ingredient}
-        className='ingredient-field'/>
+        className='ingredient-field'
+        required/>
       </div>
     )
   });
@@ -21,16 +22,16 @@ var RecipeModal = function(props){
       </Modal.Header>
 
       <Modal.Body>
+        <button className="delete-button" onClick={props.delete}>Delete</button>
         <form className="form">
-          <input type="text" placeholder="Title" onChange={props.onTitleUpdate} value={props.title}/>
-          <input type="text" placeholder="Image URL" onChange={props.onImageUpdate} value={props.image}/>
-          <input type="text" placeholder="Servings" onChange={props.onServingsUpdate} value={props.servings}/>
+          <input type="text" placeholder="Title" onChange={props.onTitleUpdate} value={props.title} required/>
+          <input type="text" placeholder="Image URL" onChange={props.onImageUpdate} value={props.image} required/>
+          <input type="number" min='1' placeholder="Servings" onChange={props.onServingsUpdate} value={props.servings} required/>
           <h2>Ingredient List:</h2>
           {ingredient_list}
-          <button className="add-button" onClick={props.onAddClick}>+ add another ingredient</button>
-          <button className="submit" onClick={props.onSubmit}>Save Recipe</button>
-          <button className="delete-button" onClick={props.delete}>Delete</button>
+          <button className="submit" onClick={props.onSubmit} type="submit">Save Recipe</button>
         </form>
+        <button className="add-button" onClick={props.onAddClick}>+ add another ingredient</button>
       </Modal.Body>
     </Modal>
   )

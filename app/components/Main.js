@@ -8,15 +8,14 @@ var Main = React.createClass({
   },
 
   getInitialState: function(){
-    var start_recipe = this.createRecipe('http://www.wikihow.com/images/7/78/Cook-a-Western-Omelet-Intro.jpg',
-    ['3 eggs', '2 slices bacon', '2 tomatoes'], 'Omelette');
     return {
-      recipe_list:[start_recipe,start_recipe]
+      recipe_list:this.props.recipe_list
     }
   },
 
-  addRecipe: function(image, ingredient_list, num_list, title){
-    var new_recipe = this.createRecipe(image, ingredient_list,num_list, title);
+
+  addRecipe: function(image, ingredient_list, num_list, title, servings){
+    var new_recipe = this.createRecipe(image, ingredient_list,num_list, title, servings);
     var new_list = this.state.recipe_list;
     new_list.push(new_recipe);
     this.setState({
@@ -24,8 +23,8 @@ var Main = React.createClass({
     });
   },
 
-  modifyRecipe: function(image, ingredient_list, num_list, title, id){
-    var new_recipe = this.createRecipe(image, ingredient_list, num_list, title);
+  modifyRecipe: function(image, ingredient_list, num_list, title, id, servings){
+    var new_recipe = this.createRecipe(image, ingredient_list, num_list, title, servings);
     var new_list = this.state.recipe_list;
     new_list[id] = new_recipe;
     this.setState({
@@ -33,12 +32,13 @@ var Main = React.createClass({
     });
   },
 
-  createRecipe: function(image, ingredient_list,num_list, title){
+  createRecipe: function(image, ingredient_list,num_list, title, servings){
     var new_recipe = {
       image: image,
       ingredient_list: ingredient_list,
       num_list: num_list,
-      title: title
+      title: title,
+      servings : servings
     }
     return new_recipe;
   },
@@ -54,15 +54,22 @@ var Main = React.createClass({
 
   showRecipe: function(e){
     var curr_recipe = this.state.recipe_list[e.currentTarget.id];
+    this.props.saveRecipeList(this.state.recipe_list)
     this.context.router.push({
       pathname: '/recipeView',
       query:{
         image: curr_recipe.image,
         title: curr_recipe.title,
         ingredient_list: curr_recipe.ingredient_list,
-        num_list: curr_recipe.num_list
+        num_list: curr_recipe.num_list,
+        servings: curr_recipe.servings
       }
     });
+  },
+
+  onerror: function(e){
+    console.log(e.currentTarget);
+    e.currentTarget.src='http://nemanjakovacevic.net/wp-content/uploads/2013/07/placeholder.png';
   },
 
   render: function(){
@@ -70,13 +77,14 @@ var Main = React.createClass({
       return(
         <Recipe key={key} recipe={recipe} id={key} showRecipe={this.showRecipe}
           delete={this.delete}
-          modifyRecipe={this.modifyRecipe}/>
+          onSubmit={this.modifyRecipe}
+          onerror={this.onerror}/>
     );
     }.bind(this));
 
     return (
       <div>
-        <ModalContainer addRecipe={this.addRecipe} delete={this.delete}/>
+        <ModalContainer onSubmit={this.addRecipe} delete={this.delete} id={this.state.recipe_list.length}/>
         {recipes}
       </div>
     )

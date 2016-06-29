@@ -1,6 +1,6 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
-var ModifyRecipe = require('../containers/ModifyRecipe');
+var ModalContainer = require('../containers/ModalContainer');
 
 var Recipe = React.createClass({
   propTypes:{
@@ -11,17 +11,16 @@ var Recipe = React.createClass({
     var recipe = this.props.recipe;
     return(
       <div className = "recipe">
-        <ModifyRecipe
+        <ModalContainer
           showModal={false}
-          title = {recipe.title}
-          image = {recipe.image}
-          ingredient_list={recipe.ingredient_list}
+          recipe={recipe}
           delete={this.props.delete}
           id={this.props.id}
-          modifyRecipe={this.props.modifyRecipe}/>
+          onSubmit={this.props.onSubmit}
+          modify={true}/>
         <div onClick={this.props.showRecipe} id={this.props.id}>
           <h1>{recipe.title}</h1>
-          <img src={recipe.image} alt=""/>
+          <img src={recipe.image} onError={this.props.onerror}/>
         </div>
       </div>
 
