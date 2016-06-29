@@ -4596,7 +4596,7 @@
 	var Router = ReactRouter.Router;
 	var Route = ReactRouter.Route;
 	var IndexRoute = ReactRouter.IndexRoute;
-	var hashHistory = ReactRouter.hashHistory;
+	var browserHistory = ReactRouter.browserHistory;
 
 	var Main = __webpack_require__(505);
 	var MainContainer = __webpack_require__(509);
@@ -4604,7 +4604,7 @@
 
 	var routes = React.createElement(
 	  Router,
-	  { history: hashHistory },
+	  { history: browserHistory },
 	  React.createElement(
 	    Route,
 	    { path: '/', component: MainContainer },
@@ -10204,7 +10204,7 @@
 	  getInitialState: function () {
 	    return {
 	      servings: parseInt(this.props.location.query.servings, 10),
-	      num_list: this.props.location.query.num_list
+	      num_list: this.props.location.query.num_list.split(',')
 	    };
 	  },
 
@@ -10267,7 +10267,9 @@
 
 	var RecipeView = function (props) {
 	  var query = props.query;
-	  var ingredient_list = query.ingredient_list;
+	  var ingredient_list = query.ingredient_list.split(',');
+	  console.log(typeof ingredient_list);
+	  console.log(props.num_list);
 	  var ingredients = ingredient_list.map(function (ingredient, key) {
 	    return React.createElement(
 	      'div',
@@ -45924,8 +45926,8 @@
 	      query: {
 	        image: curr_recipe.image,
 	        title: curr_recipe.title,
-	        ingredient_list: curr_recipe.ingredient_list,
-	        num_list: curr_recipe.num_list,
+	        ingredient_list: [curr_recipe.ingredient_list],
+	        num_list: [curr_recipe.num_list],
 	        servings: curr_recipe.servings
 	      }
 	    });
@@ -46286,7 +46288,7 @@
 	      recipe_list: [{
 	        image: 'http://www.wikihow.com/images/7/78/Cook-a-Western-Omelet-Intro.jpg',
 	        ingredient_list: ['eggs', 'slices ham', 'tomatoes', 'cups cheddar', 'green pepper', 'onions'],
-	        num_list: [3, 2, 2, 0.25, 1, 0.5],
+	        num_list: [3, 2, 1, 0.25, 1, 0.5],
 	        title: 'Omelette',
 	        servings: 1
 	      }]
