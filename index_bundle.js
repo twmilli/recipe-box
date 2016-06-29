@@ -4607,9 +4607,9 @@
 	  { history: browserHistory },
 	  React.createElement(
 	    Route,
-	    { path: './', component: MainContainer },
+	    { path: '/', component: MainContainer },
 	    React.createElement(IndexRoute, { component: Main }),
-	    React.createElement(Route, { path: 'recipeView', component: RecipeViewContainer })
+	    React.createElement(Route, { path: '/recipeView', component: RecipeViewContainer })
 	  )
 	);
 
@@ -10238,7 +10238,7 @@
 	      null,
 	      React.createElement(
 	        Link,
-	        { to: './' },
+	        { to: '/' },
 	        React.createElement(FontAwesome, {
 	          name: 'arrow-left',
 	          size: '3x',
@@ -45922,7 +45922,7 @@
 	    var curr_recipe = this.state.recipe_list[e.currentTarget.id];
 	    this.props.saveRecipeList(this.state.recipe_list);
 	    this.context.router.push({
-	      pathname: './recipeView',
+	      pathname: '/recipeView',
 	      query: {
 	        image: curr_recipe.image,
 	        title: curr_recipe.title,
