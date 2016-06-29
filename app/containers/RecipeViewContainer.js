@@ -7,7 +7,7 @@ var RecipeViewContainer = React.createClass({
   getInitialState: function(){
     return{
       servings: parseInt(this.props.location.query.servings,10),
-      num_list: this.props.location.query.num_list
+      num_list: this.props.location.query.num_list.split(',')
     }
   },
 

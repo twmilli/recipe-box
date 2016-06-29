@@ -8,7 +8,7 @@ var MainContainer = React.createClass({
       recipe_list:[{
         image: 'http://www.wikihow.com/images/7/78/Cook-a-Western-Omelet-Intro.jpg',
         ingredient_list: ['eggs', 'slices ham', 'tomatoes', 'cups cheddar', 'green pepper', 'onions'],
-        num_list: [3,2,2,0.25, 1, 0.5],
+        num_list: [3,2,1,0.25, 1, 0.5],
         title: 'Omelette',
         servings : 1
       }]

@@ -6,7 +6,9 @@ var Col = Bootstrap.Col;
 
 var RecipeView = function(props){
   var query = props.query;
-  var ingredient_list = query.ingredient_list;
+  var ingredient_list = query.ingredient_list.split(',');
+  console.log(typeof ingredient_list);
+  console.log(props.num_list);
   var ingredients = ingredient_list.map(function(ingredient, key){
     return(<div key={key}>
         <input type="number" value={props.num_list[key]} readOnly={true}/>

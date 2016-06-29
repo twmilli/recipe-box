@@ -56,14 +56,14 @@ var Main = React.createClass({
 
   showRecipe: function(e){
     var curr_recipe = this.state.recipe_list[e.currentTarget.id];
-    this.props.saveRecipeList(this.state.recipe_list)
+    this.props.saveRecipeList(this.state.recipe_list);
     this.context.router.push({
       pathname: '/recipeView',
       query:{
         image: curr_recipe.image,
         title: curr_recipe.title,
-        ingredient_list: curr_recipe.ingredient_list,
-        num_list: curr_recipe.num_list,
+        ingredient_list: [curr_recipe.ingredient_list],
+        num_list: [curr_recipe.num_list],
         servings: curr_recipe.servings
       }
     });
