@@ -6,17 +6,17 @@ var RecipeViewContainer = require('../containers/RecipeViewContainer');
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
-var browserHistory = ReactRouter.browserHistory;
+var hashHistory = ReactRouter.hashHistory;
 
 var Main = require('../components/Main');
 var MainContainer = require('../containers/MainContainer');
 var RecipeModal = require('../components/RecipeModal');
 
 var routes = (
-  <Router history = {browserHistory}>
+  <Router history = {hashHistory}>
     <Route path='/' component = {MainContainer}>
       <IndexRoute component = {Main} />
-      <Route path='/recipeView' component={RecipeViewContainer} />
+      <Route path='recipeView' component={RecipeViewContainer} />
     </Route>
   </Router>
 );

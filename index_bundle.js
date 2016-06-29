@@ -4596,7 +4596,7 @@
 	var Router = ReactRouter.Router;
 	var Route = ReactRouter.Route;
 	var IndexRoute = ReactRouter.IndexRoute;
-	var browserHistory = ReactRouter.browserHistory;
+	var hashHistory = ReactRouter.hashHistory;
 
 	var Main = __webpack_require__(505);
 	var MainContainer = __webpack_require__(509);
@@ -4604,12 +4604,12 @@
 
 	var routes = React.createElement(
 	  Router,
-	  { history: browserHistory },
+	  { history: hashHistory },
 	  React.createElement(
 	    Route,
 	    { path: '/', component: MainContainer },
 	    React.createElement(IndexRoute, { component: Main }),
-	    React.createElement(Route, { path: '/recipeView', component: RecipeViewContainer })
+	    React.createElement(Route, { path: 'recipeView', component: RecipeViewContainer })
 	  )
 	);
 
@@ -10268,8 +10268,6 @@
 	var RecipeView = function (props) {
 	  var query = props.query;
 	  var ingredient_list = query.ingredient_list.split(',');
-	  console.log(typeof ingredient_list);
-	  console.log(props.num_list);
 	  var ingredients = ingredient_list.map(function (ingredient, key) {
 	    return React.createElement(
 	      'div',
