@@ -4266,7 +4266,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Montserrat);", ""]);
 
 	// module
-	exports.push([module.id, "body {\n  background: url(" + __webpack_require__(42) + ");\n  color: #6f6c6c; }\n\n.main {\n  font-family: 'century-gothic';\n  width: 80%;\n  margin: auto;\n  margin-top: 2rem; }\n\n.search-bar {\n  padding: 0.5rem;\n  border-radius: 0.5rem;\n  background-color: white;\n  color: black;\n  width: 30%;\n  margin: auto;\n  margin-top: 3rem;\n  border: 2px solid #2f80f9; }\n  .search-bar input {\n    margin-left: 2rem;\n    height: 100%;\n    font-size: 1.1em;\n    width: 70%;\n    border: none;\n    outline: none; }\n\n.add {\n  font-size: 1.5em;\n  display: block;\n  border-radius: 50%;\n  border: none;\n  margin: 2rem;\n  color: white;\n  width: 5rem;\n  height: 5rem;\n  outline: none;\n  background-color: #f96; }\n  .add:active {\n    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }\n  .add:hover {\n    color: #7ec0f0; }\n\n.form {\n  padding: 3rem; }\n  .form input {\n    background-color: #f2f2f2;\n    border: none;\n    border-radius: 0.5rem;\n    width: 100%;\n    padding: 1rem;\n    margin: 1rem;\n    box-sizing: border-box;\n    font-size: 1.1em;\n    outline: none; }\n  .form .ingredient-field {\n    width: 75%; }\n  .form .quantity-field {\n    width: 15%;\n    display: inline-block; }\n  .form .submit {\n    border: none;\n    color: white;\n    background-color: #a4ffba;\n    border-radius: 1rem;\n    width: 40%;\n    height: 5rem;\n    margin: auto; }\n    .form .submit:hover {\n      background-color: #72d788; }\n\n.add-button, .delete-button {\n  border: none;\n  outline: none;\n  border-radius: 0.5rem;\n  background-color: #403e40;\n  color: white;\n  width: 100%;\n  height: 4rem; }\n\n.delete-button {\n  background-color: #ff836c; }\n  .delete-button:hover, .delete-button :active {\n    background-color: #fb513a; }\n\n.full-recipe {\n  background-color: white;\n  margin: 10rem auto 10rem auto; }\n  .full-recipe .servings {\n    padding-top: 1rem;\n    font-size: 1.5em;\n    background-color: #6f6c6c;\n    color: white; }\n    .full-recipe .servings button {\n      margin: 0 2rem 1rem 2rem;\n      border: none;\n      background: none;\n      outline: none; }\n      .full-recipe .servings button:hover {\n        color: #f96; }\n  .full-recipe h2 {\n    font-family: \"Montserrat\";\n    padding-bottom: 2rem;\n    border-bottom: 1px solid; }\n  .full-recipe .left {\n    font-family: \"Montserrat\";\n    background-color: #6f6c6c;\n    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.4); }\n  .full-recipe .full-recipe_title {\n    text-align: center;\n    font-family: \"Montserrat\";\n    font-size: 3.2em;\n    color: #fc9a26; }\n  .full-recipe input {\n    margin: 1rem 0 1rem 0;\n    outline: none;\n    border: none; }\n  .full-recipe img {\n    width: 105.5%;\n    margin-left: -1.5rem; }\n\n.recipe {\n  display: inline-block;\n  cursor: pointer;\n  margin: 2rem;\n  margin-bottom: 8rem;\n  margin-bottom: 8rem;\n  background-color: white;\n  width: 30%;\n  height: 30rem;\n  border-radius: 1rem; }\n  .recipe h1 {\n    text-align: center;\n    cursor: pointer; }\n  .recipe img {\n    border-top: 2px solid #6f6c6c;\n    width: 100%;\n    height: 100%;\n    border-radius: 0 0 1rem 1rem; }\n  .recipe .edit {\n    float: right;\n    padding: 1rem;\n    display: inline; }\n    .recipe .edit:hover, .recipe .edit:active {\n      color: #f96;\n      cursor: pointer; }\n", ""]);
+	exports.push([module.id, "body {\n  background: url(" + __webpack_require__(42) + ");\n  color: #6f6c6c; }\n\n.main {\n  font-family: 'century-gothic';\n  width: 80%;\n  margin: auto;\n  margin-top: 2rem; }\n\n.search-bar {\n  padding: 0.5rem;\n  border-radius: 0.5rem;\n  background-color: white;\n  color: black;\n  width: 30%;\n  margin: auto;\n  margin-top: 3rem;\n  border: 2px solid #2f80f9; }\n  .search-bar input {\n    margin-left: 2rem;\n    height: 100%;\n    font-size: 1.1em;\n    width: 70%;\n    border: none;\n    outline: none; }\n\n.add, .import .import-recipe .yummly-add {\n  font-size: 1.5em;\n  display: block;\n  border-radius: 50%;\n  border: none;\n  margin: 2rem;\n  color: white;\n  width: 5rem;\n  height: 5rem;\n  outline: none;\n  background-color: #f96; }\n  .add:active, .import .import-recipe .yummly-add:active {\n    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }\n  .add:hover, .import .import-recipe .yummly-add:hover {\n    color: #7ec0f0; }\n\n.form {\n  padding: 3rem; }\n  .form input {\n    background-color: #f2f2f2;\n    border: none;\n    border-radius: 0.5rem;\n    width: 100%;\n    padding: 1rem;\n    margin: 1rem;\n    box-sizing: border-box;\n    font-size: 1.1em;\n    outline: none; }\n  .form .ingredient-field {\n    width: 75%; }\n  .form .quantity-field {\n    width: 15%;\n    display: inline-block; }\n  .form .submit {\n    border: none;\n    color: white;\n    background-color: #a4ffba;\n    border-radius: 1rem;\n    width: 40%;\n    height: 5rem;\n    margin: auto; }\n    .form .submit:hover {\n      background-color: #72d788; }\n\n.add-button, .delete-button, .yummly, .confirm .modal-footer button {\n  border: none;\n  outline: none;\n  border-radius: 0.5rem;\n  background-color: #403e40;\n  color: white;\n  width: 100%;\n  height: 4rem; }\n\n.delete-button {\n  background-color: #ff836c; }\n  .delete-button:hover, .delete-button :active {\n    background-color: #fb513a; }\n\n.import {\n  width: 100%; }\n  .import .search-btn {\n    outline: none;\n    border: none;\n    background-color: #f1eff2;\n    width: 10rem;\n    margin-top: 1rem; }\n    .import .search-btn:hover {\n      color: black;\n      outline: 1px solid #6f6c6c; }\n  .import .import-recipe {\n    position: relative;\n    width: 20%;\n    margin: 5rem;\n    display: inline-block; }\n    .import .import-recipe .import-title {\n      font-size: 1.5em;\n      color: white;\n      margin: auto; }\n    .import .import-recipe img {\n      border-radius: 1rem;\n      width: 55%; }\n    .import .import-recipe .yummly-add {\n      position: absolute;\n      bottom: -1rem;\n      right: 2rem; }\n\n.yummly {\n  width: 25%;\n  float: right;\n  margin-right: 1rem;\n  border: none; }\n  .yummly:hover, .yummly :active {\n    color: #f96; }\n\n.full-recipe {\n  background-color: white;\n  margin: 10rem auto 10rem auto; }\n  .full-recipe .servings {\n    padding-top: 1rem;\n    font-size: 1.5em;\n    background-color: #6f6c6c;\n    color: white; }\n    .full-recipe .servings button {\n      margin: 0 2rem 1rem 2rem;\n      border: none;\n      background: none;\n      outline: none; }\n      .full-recipe .servings button:hover {\n        color: #f96; }\n  .full-recipe h2 {\n    font-family: \"Montserrat\";\n    padding-bottom: 2rem;\n    border-bottom: 1px solid; }\n  .full-recipe .left {\n    font-family: \"Montserrat\";\n    background-color: #6f6c6c;\n    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.4); }\n  .full-recipe .full-recipe_title {\n    text-align: center;\n    font-family: \"Montserrat\";\n    font-size: 3.2em;\n    color: #fc9a26; }\n  .full-recipe input {\n    margin: 1rem 0 1rem 0;\n    outline: none;\n    border: none; }\n  .full-recipe .ingredient {\n    width: 70%; }\n  .full-recipe img {\n    width: 105.5%;\n    margin-left: -1.5rem; }\n\n.recipe {\n  display: inline-block;\n  cursor: pointer;\n  margin: 2rem;\n  margin-bottom: 8rem;\n  margin-bottom: 8rem;\n  background-color: white;\n  width: 30%;\n  height: 30rem;\n  border-radius: 1rem; }\n  .recipe h1 {\n    text-align: center;\n    cursor: pointer; }\n  .recipe img {\n    border-top: 2px solid #6f6c6c;\n    max-width: 100%;\n    height: auto;\n    width: auto\\9;\n    /* ie8 */\n    border-radius: 0 0 1rem 1rem; }\n  .recipe .edit {\n    float: right;\n    padding: 1rem;\n    display: inline; }\n    .recipe .edit:hover, .recipe .edit:active {\n      color: #f96;\n      cursor: pointer; }\n\n.confirm .modal-footer button {\n  width: 50%; }\n\n.confirm .modal-footer .yes {\n  background-color: #41bf77; }\n\n.confirm .modal-footer .no {\n  background-color: #c23434; }\n", ""]);
 
 	// exports
 
@@ -4601,6 +4601,7 @@
 	var Main = __webpack_require__(505);
 	var MainContainer = __webpack_require__(509);
 	var RecipeModal = __webpack_require__(508);
+	var YummlyViewContainer = __webpack_require__(517);
 
 	var routes = React.createElement(
 	  Router,
@@ -4609,7 +4610,8 @@
 	    Route,
 	    { path: '/', component: MainContainer },
 	    React.createElement(IndexRoute, { component: Main }),
-	    React.createElement(Route, { path: 'recipeView', component: RecipeViewContainer })
+	    React.createElement(Route, { path: 'recipeView', component: RecipeViewContainer }),
+	    React.createElement(Route, { path: 'import', component: YummlyViewContainer })
 	  )
 	);
 
@@ -10269,11 +10271,14 @@
 	  var query = props.query;
 	  var ingredient_list = query.ingredient_list.split(',');
 	  var ingredients = ingredient_list.map(function (ingredient, key) {
+	    if (ingredient == '') {
+	      return;
+	    }
 	    return React.createElement(
 	      'div',
 	      { key: key },
 	      React.createElement('input', { type: 'number', value: props.num_list[key], readOnly: true }),
-	      React.createElement('input', { type: 'text', defaultValue: ingredient, readOnly: true }),
+	      React.createElement('input', { type: 'text', defaultValue: ingredient, className: 'ingredient', readOnly: true }),
 	      React.createElement('br', null)
 	    );
 	  });
@@ -45879,10 +45884,25 @@
 	    };
 	  },
 
+	  componentWillMount: function () {
+	    var query = this.props.location.query;
+	    if (query.title != null) {
+	      this.addRecipe(query.image, query.ingredient_list.split(','), query.num_list, query.title, 1);
+	    }
+	  },
+
 	  addRecipe: function (image, ingredient_list, num_list, title, servings) {
 	    var new_recipe = this.createRecipe(image, ingredient_list, num_list, title, servings);
 	    var new_list = this.state.recipe_list;
 	    new_list.push(new_recipe);
+	    this.setState({
+	      recipe_list: new_list
+	    });
+	  },
+
+	  importRecipe: function (recipe) {
+	    var new_list = this.state.recipe_list;
+	    new_list.push(recipe);
 	    this.setState({
 	      recipe_list: new_list
 	    });
@@ -45959,6 +45979,15 @@
 	    });
 	  },
 
+	  handleImportRecipe: function (e) {
+	    this.context.router.push({
+	      pathname: '/import',
+	      query: {
+	        importRecipe: this.importRecipe
+	      }
+	    });
+	  },
+
 	  render: function () {
 	    var recipe_list = this.getDisplayRecipeList();
 	    var recipes = recipe_list.map(function (recipe, key) {
@@ -45971,6 +46000,11 @@
 	    return React.createElement(
 	      'div',
 	      null,
+	      React.createElement(
+	        'button',
+	        { className: 'yummly', onClick: this.handleImportRecipe },
+	        '+ Import Recipe From Yummly'
+	      ),
 	      React.createElement(
 	        'div',
 	        { className: 'search-bar' },
@@ -46022,7 +46056,7 @@
 	          null,
 	          recipe.title
 	        ),
-	        React.createElement('img', { src: recipe.image, onError: this.props.onerror })
+	        React.createElement('img', { src: recipe.image, onError: this.props.onerror, className: 'center-block' })
 	      )
 	    );
 	  }
@@ -46144,11 +46178,6 @@
 	    var num_list = this.state.num_list;
 	    if (this.state.title == '' || this.state.image == '' || this.state.ingredient_list[0] == '' || this.state.servings == '') {
 	      return false;
-	    }
-	    for (var i = 0; i < ingredient_list.length; i++) {
-	      if (num_list[i] == '' && ingredient_list[i] != '') {
-	        return false;
-	      }
 	    }
 	    return true;
 	  },
@@ -47095,6 +47124,1471 @@
 	};
 
 	module.exports = ReactTransitionEvents;
+
+/***/ },
+/* 517 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(2);
+	var YummlyView = __webpack_require__(518);
+	var YummlyHelper = __webpack_require__(519);
+	var ConfirmModal = __webpack_require__(539);
+
+	var YummlyViewContainer = React.createClass({
+	  displayName: 'YummlyViewContainer',
+
+	  contextTypes: {
+	    router: React.PropTypes.object.isRequired
+	  },
+
+	  getInitialState: function () {
+	    return {
+	      recipe_list: [''],
+	      showModal: false
+	    };
+	  },
+
+	  open: function (e) {
+	    var recipe = e.currentTarget;
+	    var recipeObject = {
+	      title: recipe.title,
+	      ingredient_list: recipe.getAttribute('data-ingredient'),
+	      image: recipe.getAttribute('data-image')
+	    };
+	    console.log(recipeObject);
+	    this.setState({
+	      currRecipe: recipeObject,
+	      showModal: true
+	    });
+	  },
+
+	  close: function () {
+	    this.setState({
+	      showModal: false
+	    });
+	  },
+
+	  import: function () {
+	    var recipe = this.state.currRecipe;
+	    this.setState({
+	      showModal: false
+	    });
+	    this.context.router.push({
+	      pathname: '/',
+	      query: {
+	        image: recipe.image,
+	        title: recipe.title,
+	        ingredient_list: [recipe.ingredient_list],
+	        num_list: this.newFilledArray(recipe.ingredient_list.split(',').length, 1)
+	      }
+	    });
+	  },
+
+	  newFilledArray: function (length, val) {
+	    var array = [];
+	    for (var i = 0; i < length; i++) {
+	      array[i] = val;
+	    }
+	    return array;
+	  },
+
+	  handleSearch: function (e) {
+	    var text = document.getElementById('search-text').value;
+	    YummlyHelper.getRecipeList(text).then(function (recipe_list) {
+	      this.setState({
+	        recipe_list: recipe_list
+	      });
+	    }.bind(this));
+	  },
+
+	  render: function () {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(YummlyView, { handleSearch: this.handleSearch, recipe_list: this.state.recipe_list, open: this.open }),
+	      React.createElement(ConfirmModal, { showModal: this.state.showModal,
+	        close: this.close, onYes: this.import, onNo: this.close })
+	    );
+	  }
+	});
+
+	module.exports = YummlyViewContainer;
+
+/***/ },
+/* 518 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(2);
+	var FontAwesome = __webpack_require__(504);
+	var Link = __webpack_require__(45).Link;
+
+	var YummlyView = function (props) {
+	  var recipes = props.recipe_list.map(function (recipe, key) {
+	    if (recipe == '') {
+	      return;
+	    }
+	    return React.createElement(
+	      'div',
+	      { key: key, className: 'import-recipe' },
+	      React.createElement(
+	        'div',
+	        { className: 'import-title' },
+	        recipe.title
+	      ),
+	      React.createElement(
+	        'a',
+	        { href: recipe.url, target: '_blank' },
+	        React.createElement('img', { src: recipe.image, alt: '' })
+	      ),
+	      React.createElement(
+	        'button',
+	        { className: 'yummly-add', onClick: props.open, 'data-image': recipe.image, 'data-ingredient': recipe.ingredient_list, title: recipe.title },
+	        '+'
+	      )
+	    );
+	  });
+
+	  return React.createElement(
+	    'div',
+	    { className: 'import text-center' },
+	    React.createElement(
+	      Link,
+	      { to: '/' },
+	      React.createElement(FontAwesome, {
+	        name: 'arrow-left',
+	        size: '3x',
+	        style: { color: 'white', float: 'left' } })
+	    ),
+	    React.createElement(
+	      'div',
+	      { className: 'search-bar' },
+	      React.createElement(FontAwesome, {
+	        name: 'search',
+	        size: '2x' }),
+	      React.createElement('input', { type: 'text', id: 'search-text', placeholder: 'search' })
+	    ),
+	    React.createElement(
+	      'button',
+	      { onClick: props.handleSearch, className: 'search-btn' },
+	      'Search'
+	    ),
+	    React.createElement('br', null),
+	    recipes
+	  );
+	};
+
+	module.exports = YummlyView;
+
+/***/ },
+/* 519 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var axios = __webpack_require__(520);
+
+	var id = '233b341e';
+	var key = '12884f8db5d6370cdaa4d5acfd5bc7b4';
+
+	function getRecipes(searchText) {
+	  var query = 'http://api.yummly.com/v1/api/recipes?_app_id=' + id + '&_app_key=' + key + '&q=' + searchText;
+	  return axios.get(query).then(function (info) {
+	    return info.data.matches;
+	  });
+	}
+
+	function organizeData(results_list) {
+	  var recipe_list = [];
+	  var new_recipe;
+	  var max_recipes = 6;
+	  var base_url = "https://www.yummly.com/recipe/";
+	  for (var i = 0; i < max_recipes; i++) {
+	    var recipe_data = results_list[i];
+	    new_recipe = {
+	      image: recipe_data.imageUrlsBySize[90],
+	      ingredient_list: recipe_data.ingredients,
+	      num_list: [],
+	      title: recipe_data.recipeName,
+	      servings: 1,
+	      url: base_url + recipe_data.id
+	    };
+	    recipe_list.push(new_recipe);
+	  }
+	  return recipe_list;
+	}
+
+	var YummlyHelper = {
+	  getRecipeList: function (searchText) {
+	    return getRecipes(searchText).then(organizeData);
+	  }
+
+	};
+
+	module.exports = YummlyHelper;
+
+/***/ },
+/* 520 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(521);
+
+/***/ },
+/* 521 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var defaults = __webpack_require__(522);
+	var utils = __webpack_require__(523);
+	var dispatchRequest = __webpack_require__(525);
+	var InterceptorManager = __webpack_require__(534);
+	var isAbsoluteURL = __webpack_require__(535);
+	var combineURLs = __webpack_require__(536);
+	var bind = __webpack_require__(537);
+	var transformData = __webpack_require__(529);
+
+	function Axios(defaultConfig) {
+	  this.defaults = utils.merge({}, defaultConfig);
+	  this.interceptors = {
+	    request: new InterceptorManager(),
+	    response: new InterceptorManager()
+	  };
+	}
+
+	Axios.prototype.request = function request(config) {
+	  /*eslint no-param-reassign:0*/
+	  // Allow for axios('example/url'[, config]) a la fetch API
+	  if (typeof config === 'string') {
+	    config = utils.merge({
+	      url: arguments[0]
+	    }, arguments[1]);
+	  }
+
+	  config = utils.merge(defaults, this.defaults, { method: 'get' }, config);
+
+	  // Support baseURL config
+	  if (config.baseURL && !isAbsoluteURL(config.url)) {
+	    config.url = combineURLs(config.baseURL, config.url);
+	  }
+
+	  // Don't allow overriding defaults.withCredentials
+	  config.withCredentials = config.withCredentials || this.defaults.withCredentials;
+
+	  // Transform request data
+	  config.data = transformData(
+	    config.data,
+	    config.headers,
+	    config.transformRequest
+	  );
+
+	  // Flatten headers
+	  config.headers = utils.merge(
+	    config.headers.common || {},
+	    config.headers[config.method] || {},
+	    config.headers || {}
+	  );
+
+	  utils.forEach(
+	    ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
+	    function cleanHeaderConfig(method) {
+	      delete config.headers[method];
+	    }
+	  );
+
+	  // Hook up interceptors middleware
+	  var chain = [dispatchRequest, undefined];
+	  var promise = Promise.resolve(config);
+
+	  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+	    chain.unshift(interceptor.fulfilled, interceptor.rejected);
+	  });
+
+	  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+	    chain.push(interceptor.fulfilled, interceptor.rejected);
+	  });
+
+	  while (chain.length) {
+	    promise = promise.then(chain.shift(), chain.shift());
+	  }
+
+	  return promise;
+	};
+
+	var defaultInstance = new Axios(defaults);
+	var axios = module.exports = bind(Axios.prototype.request, defaultInstance);
+	axios.request = bind(Axios.prototype.request, defaultInstance);
+
+	// Expose Axios class to allow class inheritance
+	axios.Axios = Axios;
+
+	// Expose properties from defaultInstance
+	axios.defaults = defaultInstance.defaults;
+	axios.interceptors = defaultInstance.interceptors;
+
+	// Factory for creating new instances
+	axios.create = function create(defaultConfig) {
+	  return new Axios(defaultConfig);
+	};
+
+	// Expose all/spread
+	axios.all = function all(promises) {
+	  return Promise.all(promises);
+	};
+	axios.spread = __webpack_require__(538);
+
+	// Provide aliases for supported request methods
+	utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+	  /*eslint func-names:0*/
+	  Axios.prototype[method] = function(url, config) {
+	    return this.request(utils.merge(config || {}, {
+	      method: method,
+	      url: url
+	    }));
+	  };
+	  axios[method] = bind(Axios.prototype[method], defaultInstance);
+	});
+
+	utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+	  /*eslint func-names:0*/
+	  Axios.prototype[method] = function(url, data, config) {
+	    return this.request(utils.merge(config || {}, {
+	      method: method,
+	      url: url,
+	      data: data
+	    }));
+	  };
+	  axios[method] = bind(Axios.prototype[method], defaultInstance);
+	});
+
+
+/***/ },
+/* 522 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+	var normalizeHeaderName = __webpack_require__(524);
+
+	var PROTECTION_PREFIX = /^\)\]\}',?\n/;
+	var DEFAULT_CONTENT_TYPE = {
+	  'Content-Type': 'application/x-www-form-urlencoded'
+	};
+
+	function setContentTypeIfUnset(headers, value) {
+	  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+	    headers['Content-Type'] = value;
+	  }
+	}
+
+	module.exports = {
+	  transformRequest: [function transformRequest(data, headers) {
+	    normalizeHeaderName(headers, 'Content-Type');
+	    if (utils.isFormData(data) ||
+	      utils.isArrayBuffer(data) ||
+	      utils.isStream(data) ||
+	      utils.isFile(data) ||
+	      utils.isBlob(data)
+	    ) {
+	      return data;
+	    }
+	    if (utils.isArrayBufferView(data)) {
+	      return data.buffer;
+	    }
+	    if (utils.isURLSearchParams(data)) {
+	      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+	      return data.toString();
+	    }
+	    if (utils.isObject(data)) {
+	      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+	      return JSON.stringify(data);
+	    }
+	    return data;
+	  }],
+
+	  transformResponse: [function transformResponse(data) {
+	    /*eslint no-param-reassign:0*/
+	    if (typeof data === 'string') {
+	      data = data.replace(PROTECTION_PREFIX, '');
+	      try {
+	        data = JSON.parse(data);
+	      } catch (e) { /* Ignore */ }
+	    }
+	    return data;
+	  }],
+
+	  headers: {
+	    common: {
+	      'Accept': 'application/json, text/plain, */*'
+	    },
+	    patch: utils.merge(DEFAULT_CONTENT_TYPE),
+	    post: utils.merge(DEFAULT_CONTENT_TYPE),
+	    put: utils.merge(DEFAULT_CONTENT_TYPE)
+	  },
+
+	  timeout: 0,
+
+	  xsrfCookieName: 'XSRF-TOKEN',
+	  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+	  maxContentLength: -1,
+
+	  validateStatus: function validateStatus(status) {
+	    return status >= 200 && status < 300;
+	  }
+	};
+
+
+/***/ },
+/* 523 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/*global toString:true*/
+
+	// utils is a library of generic helper functions non-specific to axios
+
+	var toString = Object.prototype.toString;
+
+	/**
+	 * Determine if a value is an Array
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is an Array, otherwise false
+	 */
+	function isArray(val) {
+	  return toString.call(val) === '[object Array]';
+	}
+
+	/**
+	 * Determine if a value is an ArrayBuffer
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+	 */
+	function isArrayBuffer(val) {
+	  return toString.call(val) === '[object ArrayBuffer]';
+	}
+
+	/**
+	 * Determine if a value is a FormData
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is an FormData, otherwise false
+	 */
+	function isFormData(val) {
+	  return (typeof FormData !== 'undefined') && (val instanceof FormData);
+	}
+
+	/**
+	 * Determine if a value is a view on an ArrayBuffer
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+	 */
+	function isArrayBufferView(val) {
+	  var result;
+	  if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
+	    result = ArrayBuffer.isView(val);
+	  } else {
+	    result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
+	  }
+	  return result;
+	}
+
+	/**
+	 * Determine if a value is a String
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a String, otherwise false
+	 */
+	function isString(val) {
+	  return typeof val === 'string';
+	}
+
+	/**
+	 * Determine if a value is a Number
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a Number, otherwise false
+	 */
+	function isNumber(val) {
+	  return typeof val === 'number';
+	}
+
+	/**
+	 * Determine if a value is undefined
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if the value is undefined, otherwise false
+	 */
+	function isUndefined(val) {
+	  return typeof val === 'undefined';
+	}
+
+	/**
+	 * Determine if a value is an Object
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is an Object, otherwise false
+	 */
+	function isObject(val) {
+	  return val !== null && typeof val === 'object';
+	}
+
+	/**
+	 * Determine if a value is a Date
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a Date, otherwise false
+	 */
+	function isDate(val) {
+	  return toString.call(val) === '[object Date]';
+	}
+
+	/**
+	 * Determine if a value is a File
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a File, otherwise false
+	 */
+	function isFile(val) {
+	  return toString.call(val) === '[object File]';
+	}
+
+	/**
+	 * Determine if a value is a Blob
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a Blob, otherwise false
+	 */
+	function isBlob(val) {
+	  return toString.call(val) === '[object Blob]';
+	}
+
+	/**
+	 * Determine if a value is a Function
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a Function, otherwise false
+	 */
+	function isFunction(val) {
+	  return toString.call(val) === '[object Function]';
+	}
+
+	/**
+	 * Determine if a value is a Stream
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a Stream, otherwise false
+	 */
+	function isStream(val) {
+	  return isObject(val) && isFunction(val.pipe);
+	}
+
+	/**
+	 * Determine if a value is a URLSearchParams object
+	 *
+	 * @param {Object} val The value to test
+	 * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+	 */
+	function isURLSearchParams(val) {
+	  return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
+	}
+
+	/**
+	 * Trim excess whitespace off the beginning and end of a string
+	 *
+	 * @param {String} str The String to trim
+	 * @returns {String} The String freed of excess whitespace
+	 */
+	function trim(str) {
+	  return str.replace(/^\s*/, '').replace(/\s*$/, '');
+	}
+
+	/**
+	 * Determine if we're running in a standard browser environment
+	 *
+	 * This allows axios to run in a web worker, and react-native.
+	 * Both environments support XMLHttpRequest, but not fully standard globals.
+	 *
+	 * web workers:
+	 *  typeof window -> undefined
+	 *  typeof document -> undefined
+	 *
+	 * react-native:
+	 *  typeof document.createElement -> undefined
+	 */
+	function isStandardBrowserEnv() {
+	  return (
+	    typeof window !== 'undefined' &&
+	    typeof document !== 'undefined' &&
+	    typeof document.createElement === 'function'
+	  );
+	}
+
+	/**
+	 * Iterate over an Array or an Object invoking a function for each item.
+	 *
+	 * If `obj` is an Array callback will be called passing
+	 * the value, index, and complete array for each item.
+	 *
+	 * If 'obj' is an Object callback will be called passing
+	 * the value, key, and complete object for each property.
+	 *
+	 * @param {Object|Array} obj The object to iterate
+	 * @param {Function} fn The callback to invoke for each item
+	 */
+	function forEach(obj, fn) {
+	  // Don't bother if no value provided
+	  if (obj === null || typeof obj === 'undefined') {
+	    return;
+	  }
+
+	  // Force an array if not already something iterable
+	  if (typeof obj !== 'object' && !isArray(obj)) {
+	    /*eslint no-param-reassign:0*/
+	    obj = [obj];
+	  }
+
+	  if (isArray(obj)) {
+	    // Iterate over array values
+	    for (var i = 0, l = obj.length; i < l; i++) {
+	      fn.call(null, obj[i], i, obj);
+	    }
+	  } else {
+	    // Iterate over object keys
+	    for (var key in obj) {
+	      if (obj.hasOwnProperty(key)) {
+	        fn.call(null, obj[key], key, obj);
+	      }
+	    }
+	  }
+	}
+
+	/**
+	 * Accepts varargs expecting each argument to be an object, then
+	 * immutably merges the properties of each object and returns result.
+	 *
+	 * When multiple objects contain the same key the later object in
+	 * the arguments list will take precedence.
+	 *
+	 * Example:
+	 *
+	 * ```js
+	 * var result = merge({foo: 123}, {foo: 456});
+	 * console.log(result.foo); // outputs 456
+	 * ```
+	 *
+	 * @param {Object} obj1 Object to merge
+	 * @returns {Object} Result of all merge properties
+	 */
+	function merge(/* obj1, obj2, obj3, ... */) {
+	  var result = {};
+	  function assignValue(val, key) {
+	    if (typeof result[key] === 'object' && typeof val === 'object') {
+	      result[key] = merge(result[key], val);
+	    } else {
+	      result[key] = val;
+	    }
+	  }
+
+	  for (var i = 0, l = arguments.length; i < l; i++) {
+	    forEach(arguments[i], assignValue);
+	  }
+	  return result;
+	}
+
+	module.exports = {
+	  isArray: isArray,
+	  isArrayBuffer: isArrayBuffer,
+	  isFormData: isFormData,
+	  isArrayBufferView: isArrayBufferView,
+	  isString: isString,
+	  isNumber: isNumber,
+	  isObject: isObject,
+	  isUndefined: isUndefined,
+	  isDate: isDate,
+	  isFile: isFile,
+	  isBlob: isBlob,
+	  isFunction: isFunction,
+	  isStream: isStream,
+	  isURLSearchParams: isURLSearchParams,
+	  isStandardBrowserEnv: isStandardBrowserEnv,
+	  forEach: forEach,
+	  merge: merge,
+	  trim: trim
+	};
+
+
+/***/ },
+/* 524 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+
+	module.exports = function normalizeHeaderName(headers, normalizedName) {
+	  utils.forEach(headers, function processHeader(value, name) {
+	    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+	      headers[normalizedName] = value;
+	      delete headers[name];
+	    }
+	  });
+	};
+
+
+/***/ },
+/* 525 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	/**
+	 * Dispatch a request to the server using whichever adapter
+	 * is supported by the current environment.
+	 *
+	 * @param {object} config The config that is to be used for the request
+	 * @returns {Promise} The Promise to be fulfilled
+	 */
+	module.exports = function dispatchRequest(config) {
+	  return new Promise(function executor(resolve, reject) {
+	    try {
+	      var adapter;
+
+	      if (typeof config.adapter === 'function') {
+	        // For custom adapter support
+	        adapter = config.adapter;
+	      } else if (typeof XMLHttpRequest !== 'undefined') {
+	        // For browsers use XHR adapter
+	        adapter = __webpack_require__(526);
+	      } else if (typeof process !== 'undefined') {
+	        // For node use HTTP adapter
+	        adapter = __webpack_require__(526);
+	      }
+
+	      if (typeof adapter === 'function') {
+	        adapter(resolve, reject, config);
+	      }
+	    } catch (e) {
+	      reject(e);
+	    }
+	  });
+	};
+
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 526 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+
+	var utils = __webpack_require__(523);
+	var buildURL = __webpack_require__(527);
+	var parseHeaders = __webpack_require__(528);
+	var transformData = __webpack_require__(529);
+	var isURLSameOrigin = __webpack_require__(530);
+	var btoa = (typeof window !== 'undefined' && window.btoa) || __webpack_require__(531);
+	var settle = __webpack_require__(532);
+
+	module.exports = function xhrAdapter(resolve, reject, config) {
+	  var requestData = config.data;
+	  var requestHeaders = config.headers;
+
+	  if (utils.isFormData(requestData)) {
+	    delete requestHeaders['Content-Type']; // Let the browser set it
+	  }
+
+	  var request = new XMLHttpRequest();
+	  var loadEvent = 'onreadystatechange';
+	  var xDomain = false;
+
+	  // For IE 8/9 CORS support
+	  // Only supports POST and GET calls and doesn't returns the response headers.
+	  // DON'T do this for testing b/c XMLHttpRequest is mocked, not XDomainRequest.
+	  if (process.env.NODE_ENV !== 'test' && typeof window !== 'undefined' && window.XDomainRequest && !('withCredentials' in request) && !isURLSameOrigin(config.url)) {
+	    request = new window.XDomainRequest();
+	    loadEvent = 'onload';
+	    xDomain = true;
+	    request.onprogress = function handleProgress() {};
+	    request.ontimeout = function handleTimeout() {};
+	  }
+
+	  // HTTP basic authentication
+	  if (config.auth) {
+	    var username = config.auth.username || '';
+	    var password = config.auth.password || '';
+	    requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
+	  }
+
+	  request.open(config.method.toUpperCase(), buildURL(config.url, config.params, config.paramsSerializer), true);
+
+	  // Set the request timeout in MS
+	  request.timeout = config.timeout;
+
+	  // Listen for ready state
+	  request[loadEvent] = function handleLoad() {
+	    if (!request || (request.readyState !== 4 && !xDomain)) {
+	      return;
+	    }
+
+	    // The request errored out and we didn't get a response, this will be
+	    // handled by onerror instead
+	    if (request.status === 0) {
+	      return;
+	    }
+
+	    // Prepare the response
+	    var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+	    var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
+	    var response = {
+	      data: transformData(
+	        responseData,
+	        responseHeaders,
+	        config.transformResponse
+	      ),
+	      // IE sends 1223 instead of 204 (https://github.com/mzabriskie/axios/issues/201)
+	      status: request.status === 1223 ? 204 : request.status,
+	      statusText: request.status === 1223 ? 'No Content' : request.statusText,
+	      headers: responseHeaders,
+	      config: config,
+	      request: request
+	    };
+
+	    settle(resolve, reject, response);
+
+	    // Clean up request
+	    request = null;
+	  };
+
+	  // Handle low level network errors
+	  request.onerror = function handleError() {
+	    // Real errors are hidden from us by the browser
+	    // onerror should only fire if it's a network error
+	    reject(new Error('Network Error'));
+
+	    // Clean up request
+	    request = null;
+	  };
+
+	  // Handle timeout
+	  request.ontimeout = function handleTimeout() {
+	    var err = new Error('timeout of ' + config.timeout + 'ms exceeded');
+	    err.timeout = config.timeout;
+	    err.code = 'ECONNABORTED';
+	    reject(err);
+
+	    // Clean up request
+	    request = null;
+	  };
+
+	  // Add xsrf header
+	  // This is only done if running in a standard browser environment.
+	  // Specifically not if we're in a web worker, or react-native.
+	  if (utils.isStandardBrowserEnv()) {
+	    var cookies = __webpack_require__(533);
+
+	    // Add xsrf header
+	    var xsrfValue = config.withCredentials || isURLSameOrigin(config.url) ?
+	        cookies.read(config.xsrfCookieName) :
+	        undefined;
+
+	    if (xsrfValue) {
+	      requestHeaders[config.xsrfHeaderName] = xsrfValue;
+	    }
+	  }
+
+	  // Add headers to the request
+	  if ('setRequestHeader' in request) {
+	    utils.forEach(requestHeaders, function setRequestHeader(val, key) {
+	      if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
+	        // Remove Content-Type if data is undefined
+	        delete requestHeaders[key];
+	      } else {
+	        // Otherwise add header to the request
+	        request.setRequestHeader(key, val);
+	      }
+	    });
+	  }
+
+	  // Add withCredentials to request if needed
+	  if (config.withCredentials) {
+	    request.withCredentials = true;
+	  }
+
+	  // Add responseType to request if needed
+	  if (config.responseType) {
+	    try {
+	      request.responseType = config.responseType;
+	    } catch (e) {
+	      if (request.responseType !== 'json') {
+	        throw e;
+	      }
+	    }
+	  }
+
+	  // Handle progress if needed
+	  if (config.progress) {
+	    if (config.method === 'post' || config.method === 'put') {
+	      request.upload.addEventListener('progress', config.progress);
+	    } else if (config.method === 'get') {
+	      request.addEventListener('progress', config.progress);
+	    }
+	  }
+
+	  if (requestData === undefined) {
+	    requestData = null;
+	  }
+
+	  // Send the request
+	  request.send(requestData);
+	};
+
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 527 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+
+	function encode(val) {
+	  return encodeURIComponent(val).
+	    replace(/%40/gi, '@').
+	    replace(/%3A/gi, ':').
+	    replace(/%24/g, '$').
+	    replace(/%2C/gi, ',').
+	    replace(/%20/g, '+').
+	    replace(/%5B/gi, '[').
+	    replace(/%5D/gi, ']');
+	}
+
+	/**
+	 * Build a URL by appending params to the end
+	 *
+	 * @param {string} url The base of the url (e.g., http://www.google.com)
+	 * @param {object} [params] The params to be appended
+	 * @returns {string} The formatted url
+	 */
+	module.exports = function buildURL(url, params, paramsSerializer) {
+	  /*eslint no-param-reassign:0*/
+	  if (!params) {
+	    return url;
+	  }
+
+	  var serializedParams;
+	  if (paramsSerializer) {
+	    serializedParams = paramsSerializer(params);
+	  } else if (utils.isURLSearchParams(params)) {
+	    serializedParams = params.toString();
+	  } else {
+	    var parts = [];
+
+	    utils.forEach(params, function serialize(val, key) {
+	      if (val === null || typeof val === 'undefined') {
+	        return;
+	      }
+
+	      if (utils.isArray(val)) {
+	        key = key + '[]';
+	      }
+
+	      if (!utils.isArray(val)) {
+	        val = [val];
+	      }
+
+	      utils.forEach(val, function parseValue(v) {
+	        if (utils.isDate(v)) {
+	          v = v.toISOString();
+	        } else if (utils.isObject(v)) {
+	          v = JSON.stringify(v);
+	        }
+	        parts.push(encode(key) + '=' + encode(v));
+	      });
+	    });
+
+	    serializedParams = parts.join('&');
+	  }
+
+	  if (serializedParams) {
+	    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+	  }
+
+	  return url;
+	};
+
+
+/***/ },
+/* 528 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+
+	/**
+	 * Parse headers into an object
+	 *
+	 * ```
+	 * Date: Wed, 27 Aug 2014 08:58:49 GMT
+	 * Content-Type: application/json
+	 * Connection: keep-alive
+	 * Transfer-Encoding: chunked
+	 * ```
+	 *
+	 * @param {String} headers Headers needing to be parsed
+	 * @returns {Object} Headers parsed into an object
+	 */
+	module.exports = function parseHeaders(headers) {
+	  var parsed = {};
+	  var key;
+	  var val;
+	  var i;
+
+	  if (!headers) { return parsed; }
+
+	  utils.forEach(headers.split('\n'), function parser(line) {
+	    i = line.indexOf(':');
+	    key = utils.trim(line.substr(0, i)).toLowerCase();
+	    val = utils.trim(line.substr(i + 1));
+
+	    if (key) {
+	      parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+	    }
+	  });
+
+	  return parsed;
+	};
+
+
+/***/ },
+/* 529 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+
+	/**
+	 * Transform the data for a request or a response
+	 *
+	 * @param {Object|String} data The data to be transformed
+	 * @param {Array} headers The headers for the request or response
+	 * @param {Array|Function} fns A single function or Array of functions
+	 * @returns {*} The resulting transformed data
+	 */
+	module.exports = function transformData(data, headers, fns) {
+	  /*eslint no-param-reassign:0*/
+	  utils.forEach(fns, function transform(fn) {
+	    data = fn(data, headers);
+	  });
+
+	  return data;
+	};
+
+
+/***/ },
+/* 530 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+
+	module.exports = (
+	  utils.isStandardBrowserEnv() ?
+
+	  // Standard browser envs have full support of the APIs needed to test
+	  // whether the request URL is of the same origin as current location.
+	  (function standardBrowserEnv() {
+	    var msie = /(msie|trident)/i.test(navigator.userAgent);
+	    var urlParsingNode = document.createElement('a');
+	    var originURL;
+
+	    /**
+	    * Parse a URL to discover it's components
+	    *
+	    * @param {String} url The URL to be parsed
+	    * @returns {Object}
+	    */
+	    function resolveURL(url) {
+	      var href = url;
+
+	      if (msie) {
+	        // IE needs attribute set twice to normalize properties
+	        urlParsingNode.setAttribute('href', href);
+	        href = urlParsingNode.href;
+	      }
+
+	      urlParsingNode.setAttribute('href', href);
+
+	      // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+	      return {
+	        href: urlParsingNode.href,
+	        protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+	        host: urlParsingNode.host,
+	        search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+	        hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+	        hostname: urlParsingNode.hostname,
+	        port: urlParsingNode.port,
+	        pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
+	                  urlParsingNode.pathname :
+	                  '/' + urlParsingNode.pathname
+	      };
+	    }
+
+	    originURL = resolveURL(window.location.href);
+
+	    /**
+	    * Determine if a URL shares the same origin as the current location
+	    *
+	    * @param {String} requestURL The URL to test
+	    * @returns {boolean} True if URL shares the same origin, otherwise false
+	    */
+	    return function isURLSameOrigin(requestURL) {
+	      var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
+	      return (parsed.protocol === originURL.protocol &&
+	            parsed.host === originURL.host);
+	    };
+	  })() :
+
+	  // Non standard browser envs (web workers, react-native) lack needed support.
+	  (function nonStandardBrowserEnv() {
+	    return function isURLSameOrigin() {
+	      return true;
+	    };
+	  })()
+	);
+
+
+/***/ },
+/* 531 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	// btoa polyfill for IE<10 courtesy https://github.com/davidchambers/Base64.js
+
+	var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+	function E() {
+	  this.message = 'String contains an invalid character';
+	}
+	E.prototype = new Error;
+	E.prototype.code = 5;
+	E.prototype.name = 'InvalidCharacterError';
+
+	function btoa(input) {
+	  var str = String(input);
+	  var output = '';
+	  for (
+	    // initialize result and counter
+	    var block, charCode, idx = 0, map = chars;
+	    // if the next str index does not exist:
+	    //   change the mapping table to "="
+	    //   check if d has no fractional digits
+	    str.charAt(idx | 0) || (map = '=', idx % 1);
+	    // "8 - idx % 1 * 8" generates the sequence 2, 4, 6, 8
+	    output += map.charAt(63 & block >> 8 - idx % 1 * 8)
+	  ) {
+	    charCode = str.charCodeAt(idx += 3 / 4);
+	    if (charCode > 0xFF) {
+	      throw new E();
+	    }
+	    block = block << 8 | charCode;
+	  }
+	  return output;
+	}
+
+	module.exports = btoa;
+
+
+/***/ },
+/* 532 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/**
+	 * Resolve or reject a Promise based on response status.
+	 *
+	 * @param {Function} resolve A function that resolves the promise.
+	 * @param {Function} reject A function that rejects the promise.
+	 * @param {object} response The response.
+	 */
+	module.exports = function settle(resolve, reject, response) {
+	  var validateStatus = response.config.validateStatus;
+	  // Note: status is not exposed by XDomainRequest
+	  if (!response.status || !validateStatus || validateStatus(response.status)) {
+	    resolve(response);
+	  } else {
+	    reject(response);
+	  }
+	};
+
+
+/***/ },
+/* 533 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+
+	module.exports = (
+	  utils.isStandardBrowserEnv() ?
+
+	  // Standard browser envs support document.cookie
+	  (function standardBrowserEnv() {
+	    return {
+	      write: function write(name, value, expires, path, domain, secure) {
+	        var cookie = [];
+	        cookie.push(name + '=' + encodeURIComponent(value));
+
+	        if (utils.isNumber(expires)) {
+	          cookie.push('expires=' + new Date(expires).toGMTString());
+	        }
+
+	        if (utils.isString(path)) {
+	          cookie.push('path=' + path);
+	        }
+
+	        if (utils.isString(domain)) {
+	          cookie.push('domain=' + domain);
+	        }
+
+	        if (secure === true) {
+	          cookie.push('secure');
+	        }
+
+	        document.cookie = cookie.join('; ');
+	      },
+
+	      read: function read(name) {
+	        var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+	        return (match ? decodeURIComponent(match[3]) : null);
+	      },
+
+	      remove: function remove(name) {
+	        this.write(name, '', Date.now() - 86400000);
+	      }
+	    };
+	  })() :
+
+	  // Non standard browser env (web workers, react-native) lack needed support.
+	  (function nonStandardBrowserEnv() {
+	    return {
+	      write: function write() {},
+	      read: function read() { return null; },
+	      remove: function remove() {}
+	    };
+	  })()
+	);
+
+
+/***/ },
+/* 534 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var utils = __webpack_require__(523);
+
+	function InterceptorManager() {
+	  this.handlers = [];
+	}
+
+	/**
+	 * Add a new interceptor to the stack
+	 *
+	 * @param {Function} fulfilled The function to handle `then` for a `Promise`
+	 * @param {Function} rejected The function to handle `reject` for a `Promise`
+	 *
+	 * @return {Number} An ID used to remove interceptor later
+	 */
+	InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+	  this.handlers.push({
+	    fulfilled: fulfilled,
+	    rejected: rejected
+	  });
+	  return this.handlers.length - 1;
+	};
+
+	/**
+	 * Remove an interceptor from the stack
+	 *
+	 * @param {Number} id The ID that was returned by `use`
+	 */
+	InterceptorManager.prototype.eject = function eject(id) {
+	  if (this.handlers[id]) {
+	    this.handlers[id] = null;
+	  }
+	};
+
+	/**
+	 * Iterate over all the registered interceptors
+	 *
+	 * This method is particularly useful for skipping over any
+	 * interceptors that may have become `null` calling `eject`.
+	 *
+	 * @param {Function} fn The function to call for each interceptor
+	 */
+	InterceptorManager.prototype.forEach = function forEach(fn) {
+	  utils.forEach(this.handlers, function forEachHandler(h) {
+	    if (h !== null) {
+	      fn(h);
+	    }
+	  });
+	};
+
+	module.exports = InterceptorManager;
+
+
+/***/ },
+/* 535 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/**
+	 * Determines whether the specified URL is absolute
+	 *
+	 * @param {string} url The URL to test
+	 * @returns {boolean} True if the specified URL is absolute, otherwise false
+	 */
+	module.exports = function isAbsoluteURL(url) {
+	  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+	  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+	  // by any combination of letters, digits, plus, period, or hyphen.
+	  return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
+	};
+
+
+/***/ },
+/* 536 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/**
+	 * Creates a new URL by combining the specified URLs
+	 *
+	 * @param {string} baseURL The base URL
+	 * @param {string} relativeURL The relative URL
+	 * @returns {string} The combined URL
+	 */
+	module.exports = function combineURLs(baseURL, relativeURL) {
+	  return baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '');
+	};
+
+
+/***/ },
+/* 537 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = function bind(fn, thisArg) {
+	  return function wrap() {
+	    var args = new Array(arguments.length);
+	    for (var i = 0; i < args.length; i++) {
+	      args[i] = arguments[i];
+	    }
+	    return fn.apply(thisArg, args);
+	  };
+	};
+
+
+/***/ },
+/* 538 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/**
+	 * Syntactic sugar for invoking a function and expanding an array for arguments.
+	 *
+	 * Common use case would be to use `Function.prototype.apply`.
+	 *
+	 *  ```js
+	 *  function f(x, y, z) {}
+	 *  var args = [1, 2, 3];
+	 *  f.apply(null, args);
+	 *  ```
+	 *
+	 * With `spread` this example can be re-written.
+	 *
+	 *  ```js
+	 *  spread(function(x, y, z) {})([1, 2, 3]);
+	 *  ```
+	 *
+	 * @param {Function} callback
+	 * @returns {Function}
+	 */
+	module.exports = function spread(callback) {
+	  return function wrap(arr) {
+	    return callback.apply(null, arr);
+	  };
+	};
+
+
+/***/ },
+/* 539 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(2);
+	var Modal = __webpack_require__(109).Modal;
+
+	var ConfirmModal = function (props) {
+	  return React.createElement(
+	    Modal,
+	    { show: props.showModal, className: 'confirm', onHide: props.close },
+	    React.createElement(
+	      Modal.Header,
+	      { closeButton: true },
+	      React.createElement(
+	        Modal.Title,
+	        { className: 'text-center' },
+	        'Confirm'
+	      )
+	    ),
+	    React.createElement(
+	      Modal.Body,
+	      null,
+	      React.createElement(
+	        'span',
+	        null,
+	        'Are you sure you want to import this recipe? '
+	      ),
+	      React.createElement('br', null),
+	      React.createElement(
+	        'span',
+	        null,
+	        '(note: ingredient amounts do not automatically import, you must input the amounts manually)'
+	      )
+	    ),
+	    React.createElement(
+	      Modal.Footer,
+	      null,
+	      React.createElement(
+	        'button',
+	        { onClick: props.onYes, className: 'yes' },
+	        'Yes'
+	      ),
+	      React.createElement(
+	        'button',
+	        { onClick: props.onNo, className: 'no' },
+	        'No'
+	      )
+	    )
+	  );
+	};
+
+	module.exports = ConfirmModal;
 
 /***/ }
 /******/ ]);
