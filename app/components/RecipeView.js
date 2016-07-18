@@ -8,9 +8,12 @@ var RecipeView = function(props){
   var query = props.query;
   var ingredient_list = query.ingredient_list.split(',');
   var ingredients = ingredient_list.map(function(ingredient, key){
+    if (ingredient == ''){
+      return;
+    }
     return(<div key={key}>
         <input type="number" value={props.num_list[key]} readOnly={true}/>
-        <input type="text" defaultValue={ingredient} readOnly={true}/><br/>
+        <input type="text" defaultValue={ingredient} className="ingredient" readOnly={true}/><br/>
       </div>
     )
   });

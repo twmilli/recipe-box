@@ -18,6 +18,8 @@ body{
   margin-top: 2rem;
 }
 
+
+
 .search-bar{
   padding: 0.5rem;
   border-radius: $radius/2;
@@ -115,6 +117,56 @@ body{
   }
 }
 
+.import{
+  width: 100%;
+  .search-btn{
+    outline: none;
+    border: none;
+    background-color: rgb(241, 239, 242);
+    width: 10rem;
+    margin-top: 1rem;
+    &:hover{
+      color: black;
+      outline: 1px solid $accent-color;
+    }
+  }
+
+  .import-recipe{
+    position: relative;
+    width: 20%;
+    margin: 5rem;
+    display: inline-block;
+    .import-title{
+      font-size: 1.5em;
+      color: white;
+      margin: auto;
+    }
+    img{
+      border-radius: $radius;
+      width: 55%;
+    }
+
+    .yummly-add{
+      @extend .add;
+      position: absolute;
+      bottom: -1rem;
+      right: 2rem;
+    }
+  }
+
+}
+
+.yummly{
+  @extend .add-button;
+  width: 25%;
+  float: right;
+  margin-right: 1rem;
+  border: none;
+  &:hover, :active{
+    color: $orange;
+  }
+}
+
 .full-recipe{
   background-color: white;
   margin: 10rem auto 10rem auto;
@@ -160,6 +212,11 @@ body{
     outline: none;
     border: none;
   }
+
+  .ingredient{
+    width: 70%;
+  }
+
   img{
     width: 105.5%;
     margin-left: -1.5rem;
@@ -182,8 +239,9 @@ body{
   }
   img{
     border-top: 2px solid $accent-color;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
     border-radius: 0 0 $radius $radius
   }
   .edit{
@@ -196,5 +254,19 @@ body{
 
     }
   }
+}
+.confirm{
+  .modal-footer{
+    button{
+      @extend .add-button;
+      width: 50%;
+    }
+    .yes{
+      background-color: rgb(65, 191, 119);
+    }
 
+    .no{
+      background-color: #c23434;
+    }
+  }
 }

@@ -107,11 +107,6 @@ var ModalContainer = React.createClass({
       if (this.state.title == '' || this.state.image == '' || this.state.ingredient_list[0]=='' || this.state.servings==''){
         return false;
       }
-      for (var i=0; i < ingredient_list.length; i++){
-        if (num_list[i] == '' && ingredient_list[i] != ''){
-          return false;
-        }
-      }
       return true;
     },
 

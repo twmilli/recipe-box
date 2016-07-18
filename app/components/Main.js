@@ -15,11 +15,25 @@ var Main = React.createClass({
     }
   },
 
+  componentWillMount: function(){
+    var query = this.props.location.query;
+    if (query.title != null){
+      this.addRecipe(query.image, query.ingredient_list.split(','), query.num_list, query.title, 1);
+    }
+  },
 
   addRecipe: function(image, ingredient_list, num_list, title, servings){
     var new_recipe = this.createRecipe(image, ingredient_list,num_list, title, servings);
     var new_list = this.state.recipe_list;
     new_list.push(new_recipe);
+    this.setState({
+      recipe_list: new_list
+    });
+  },
+
+  importRecipe: function(recipe){
+    var new_list = this.state.recipe_list;
+    new_list.push(recipe);
     this.setState({
       recipe_list: new_list
     });
@@ -97,6 +111,15 @@ var Main = React.createClass({
     });
   },
 
+  handleImportRecipe: function(e){
+    this.context.router.push({
+      pathname: '/import',
+      query:{
+        importRecipe: this.importRecipe
+      }
+  });
+},
+
   render: function(){
     var recipe_list = this.getDisplayRecipeList();
     var recipes = recipe_list.map(function(recipe, key){
@@ -110,6 +133,7 @@ var Main = React.createClass({
 
     return (
       <div>
+        <button className='yummly' onClick={this.handleImportRecipe}>+ Import Recipe From Yummly</button>
         <div className="search-bar">
           <FontAwesome
             name="search"

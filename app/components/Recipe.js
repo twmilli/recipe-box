@@ -20,7 +20,7 @@ var Recipe = React.createClass({
           modify={true}/>
         <div onClick={this.props.showRecipe} id={this.props.id}>
           <h1>{recipe.title}</h1>
-          <img src={recipe.image} onError={this.props.onerror}/>
+          <img src={recipe.image} onError={this.props.onerror} className="center-block"/>
         </div>
       </div>
 
